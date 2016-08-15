@@ -1,0 +1,21 @@
+.DaySegment_container {
+  composes: panel from '../../utils/utils.css';
+  height: 260px;
+  width: 260px;
+}
+
+.DaySegment_container:hover {
+  cursor: inherit;
+  background-color: rgba(8,31,31,0.90);
+}
+
+.details {
+  color: #737373;
+  line-height: 7px;
+  margin-bottom: 30px;
+}
+
+.DaySegment_icons {
+  margin-top: 40px;
+  background-position: center;
+}

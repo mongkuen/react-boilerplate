@@ -1,0 +1,88 @@
+.forecastDay_container {
+  composes: panel from '../../utils/utils.css';
+  height: 300px;
+  width: 300px;
+}
+
+.icon-common {
+  height: 100px;
+  width: 100px;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.icon-01d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/01d.svg);
+}
+.icon-01n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/01n.svg);
+}
+.icon-02d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/02d.svg);
+}
+.icon-02n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/02n.svg);
+}
+.icon-03d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/03d.svg);
+}
+.icon-03n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/03n.svg);
+}
+.icon-04d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/04d.svg);
+}
+.icon-04n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/04n.svg);
+}
+.icon-09d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/09d.svg);
+}
+.icon-09n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/09n.svg);
+}
+.icon-10d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/10d.svg);
+}
+.icon-10n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/10n.svg);
+}
+.icon-11d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/11d.svg);
+}
+.icon-11n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/11n.svg);
+}
+.icon-13d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/13d.svg);
+}
+.icon-13n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/13n.svg);
+}
+.icon-50d {
+  composes: icon-common;
+  background-image: url(../../weather-icons/50d.svg);
+}
+.icon-50n {
+  composes: icon-common;
+  background-image: url(../../weather-icons/50n.svg);
+}

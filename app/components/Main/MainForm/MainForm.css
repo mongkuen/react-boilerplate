@@ -1,0 +1,14 @@
+.common {
+  text-align: center;
+}
+
+.form {
+  composes: common;
+}
+
+.home-form {
+  composes: common;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,9 @@
+.daycast_container {
+  composes: panel_container from '../../utils/utils.css';
+}
+
+.daycast_paragraph {
+  margin-top: 30px;
+  text-align: center;
+  color: #737373;
+}
