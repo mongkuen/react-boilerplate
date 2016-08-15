@@ -14,20 +14,16 @@ export default function Daycast ({forecast, datetime}) {
 
   return (
     <span>
-      <div className='container'>
-        <ForecastLocation forecast={forecast} />
-        <h3>{formatDatetime(datetime)}</h3>
-        <p className={css.daycast_paragraph}>{`Min. Temp: ${getMinTemp(daycast)}°F`}<br/>
-                                             {`Max. Temp: ${getMaxTemp(daycast)}°F`}<br/>
-                                             {`Humidity: ${getAverageHumidity(daycast)}%`}</p>
-          <div className={css.daycast_container}>
-            {daycast.map((segment) => {
-              return <DaySegment segment={segment} key={segment.dt}/>
-            })}
-          </div>
-      </div>
+      <ForecastLocation forecast={forecast} />
+      <h3>{formatDatetime(datetime)}</h3>
+      <p className={css.daycast_paragraph}>{`Min. Temp: ${getMinTemp(daycast)}°F`}<br/>
+                                           {`Max. Temp: ${getMaxTemp(daycast)}°F`}<br/>
+                                           {`Humidity: ${getAverageHumidity(daycast)}%`}</p>
+        <div className={css.daycast_container}>
+          {daycast.map((segment) => {
+            return <DaySegment segment={segment} key={segment.dt}/>
+          })}
+        </div>
     </span>
   )
 }
-
-

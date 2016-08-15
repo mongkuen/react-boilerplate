@@ -24,7 +24,9 @@ export default function Main ({children}) {
         </div>
       </nav>
       <div className={`${css.background}`}>
-        {children}
+        <div className={`container ${css.container_padding}`}>
+          {children}
+        </div>
       </div>
     </div>
   )

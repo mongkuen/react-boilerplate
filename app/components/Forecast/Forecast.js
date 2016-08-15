@@ -25,18 +25,16 @@ export default function Forecast ({forecast, isLoading, onForecastClick}) {
   const forecastDays = getForecastDays(forecast).forecastDays
   return (
     <span>
-      <div className='container'>
-        <ForecastLocation forecast={forecast} />
-        <div className={css.forecast_container}>
-          {forecastDays.map((day) => {
-            const icon = day.weather[0].icon
-            return <ForecastDay
-                    datetime={day.dt_txt}
-                    icon={icon}
-                    key={day.dt}
-                    onForecastClick={onForecastClick} />
-          })}
-        </div>
+      <ForecastLocation forecast={forecast} />
+      <div className={css.forecast_container}>
+        {forecastDays.map((day) => {
+          const icon = day.weather[0].icon
+          return <ForecastDay
+                  datetime={day.dt_txt}
+                  icon={icon}
+                  key={day.dt}
+                  onForecastClick={onForecastClick} />
+        })}
       </div>
     </span>
   )

@@ -35,5 +35,9 @@ a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
+}
+
+.container_padding{
+  padding-bottom: 100px;
 }

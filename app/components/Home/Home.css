@@ -5,6 +5,10 @@
   margin-bottom: 10px;
 }
 
+.center_container {
+  height: 100vh;
+}
+
 .center {
   position: relative;
   top: 45%;

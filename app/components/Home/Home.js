@@ -6,12 +6,14 @@ import FormContainer from '../../containers/FormContainer'
 
 export default function Home () {
   return (
-    <div className={css.center}>
-      <h1 className={css.header}>What's Outside?</h1>
-      <FormContainer>
-        <MainForm placeholder='Lincoln, Nebraska' style="home-form"/>
-        <MainButton text='Get Weather' style="home-button" />
-      </FormContainer>
+    <div className={css.center_container}>
+      <div className={css.center}>
+        <h1 className={css.header}>What's Outside?</h1>
+        <FormContainer>
+          <MainForm placeholder='Lincoln, Nebraska' style="home-form"/>
+          <MainButton text='Get Weather' style="home-button" />
+        </FormContainer>
+      </div>
     </div>
   )
 }

@@ -7,10 +7,6 @@ DaySegment.propTypes = {
 
 }
 
-function puke (obj) {
-  return <pre>{JSON.stringify(obj, null, ' ')}</pre>
-}
-
 export default function DaySegment ({segment}) {
   const datetime = segment.dt_txt
   const { temp_max, humidity } = segment.main
